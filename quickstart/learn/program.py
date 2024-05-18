@@ -289,3 +289,38 @@
 #     print(number)
 #     sleep(1)  # Wait 1 second
 # print("Blast off!! 🚀")
+
+# 使用字典
+planet = {"name": "Earth", "moons": 1}
+
+# print(planet.get("name"))
+# print(planet["name"])
+
+planet.update({"name": "Makemake"})
+# print(planet.get("name"))
+
+planet["name"] = "Jupiter"
+# print(planet.get("name"))
+
+planet["orbital period"] = 4333
+# print(planet.get("orbital period"))
+
+planet.pop("orbital period")
+# print(planet.get("orbital period"))
+# print(plant["orbital period"])
+
+
+planet["diameter (km)"] = {"polar": 133709, "equatorial": 142984}
+
+# print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
+
+for key in planet.keys():
+    print(f"{key}: {planet[key]}")
+
+if "key1" in planet:
+    planet["key1"] = planet["key1"] + 1
+else:
+    planet["key1"] = 1
+
+for value in planet.values():
+    print(value)
