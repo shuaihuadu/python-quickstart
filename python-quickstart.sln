@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "Pytho
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DjangoWebProject1", "DjangoWebProject1\DjangoWebProject1.pyproj", "{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{5E97D39A-3BEE-41BF-A5B8-ABE3FE0B47D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
