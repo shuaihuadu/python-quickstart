@@ -477,3 +477,22 @@ playwright-report/
 # Static Web App deployment config
 swa-cli.config.json
 **/copilot-chat-app/webapp/build
+quickstart/langchain/MarkdownHeaderTextSplitter/docs/book_183.md
+quickstart/langchain/MarkdownHeaderTextSplitter/docs/book_26.md
+quickstart/langchain/MarkdownHeaderTextSplitter/docs/level1_heading.md
+quickstart/langchain/MarkdownHeaderTextSplitter/docs/no_heading.md
+quickstart/langchain/MarkdownHeaderTextSplitter/docs/test.md
+quickstart/langchain/MarkdownHeaderTextSplitter/test.md
+quickstart/langchain/MarkdownHeaderTextSplitter/result.json
+quickstart/langchain/MarkdownHeaderTextSplitter/output/test_content.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/test.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/no_heading_content.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/no_heading.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/level1_heading_content.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/level1_heading.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/book_26_content.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/book_26.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/book_183_content.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/output/book_183.txt
+quickstart/langchain/MarkdownHeaderTextSplitter/test.md
+quickstart/langchain/MarkdownHeaderTextSplitter/result.json
