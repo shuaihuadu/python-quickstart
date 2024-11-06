@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DjangoWebProject1", "DjangoWebProject1\DjangoWebProject1.pyproj", "{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{5E97D39A-3BEE-41BF-A5B8-ABE3FE0B47D6}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FlaskWebProject1", "src\FlaskWebProject1\FlaskWebProject1.pyproj", "{02A4F3C3-DCFC-4D37-A021-10DDDF58919D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DjangoWebProject1", "src\DjangoWebProject1\DjangoWebProject1.pyproj", "{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "src\PythonApplication1\PythonApplication1.pyproj", "{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,15 +19,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A4F3C3-DCFC-4D37-A021-10DDDF58919D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A4F3C3-DCFC-4D37-A021-10DDDF58919D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A4F3C3-DCFC-4D37-A021-10DDDF58919D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A4F3C3-DCFC-4D37-A021-10DDDF58919D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0E0815-2921-4A10-844B-9A03D3DBCAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02A4F3C3-DCFC-4D37-A021-10DDDF58919D} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
+		{E8A2B7BD-C4F7-4015-AF0D-E69026DB5643} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
+		{DA0E0815-2921-4A10-844B-9A03D3DBCAF2} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02B7A411-FB6E-4338-BB59-0CB33369DF16}
