@@ -1,25 +1,33 @@
-"""
-This script runs the application using a development server.
-It contains the definition of routes and views for the application.
-"""
+# import os
+# from HelloFlask import app
 
-from flask import Flask
-app = Flask(__name__)
+# if __name__ == "__main__":
+#     HOST = os.environ.get("SERVER_HOST", "localhost")
 
-# Make the WSGI interface available at the top level so wfastcgi can get it.
-wsgi_app = app.wsgi_app
+#     try:
+#         PORT = int(os.environ.get("SERVER_PORT", "5555"))
+#     except ValueError:
+#         PORT = 5555
 
+#     app.run(HOST, PORT)
 
-@app.route('/')
-def hello():
-    """Renders a sample page."""
-    return "Hello World!"
+import os
+from dotenv import load_dotenv
+from milvus import create_app
 
-if __name__ == '__main__':
-    import os
-    HOST = os.environ.get('SERVER_HOST', 'localhost')
+load_dotenv(override=True)
+
+# print("SERVER_HOST:", os.environ.get("SERVER_HOST"))
+# print("SERVER_PORT:", os.environ.get("SERVER_PORT"))
+
+app = create_app()
+
+if __name__ == "__main__":
+    HOST = os.environ.get("SERVER_HOST", "localhost")
+
     try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        PORT = int(os.environ.get("SERVER_PORT", "5555"))
     except ValueError:
         PORT = 5555
+
     app.run(HOST, PORT)

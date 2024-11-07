@@ -16,6 +16,8 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>FlaskWebProject1</Name>
     <RootNamespace>FlaskWebProject1</RootNamespace>
+    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserPort>5555</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,10 +28,62 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="milvus\constants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\fields\faq_fields.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\fields\qna_fields.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\fields\search_fields.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\milvus_apis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\milvus_resources.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\milvus_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app.py" />
+    <Compile Include="HelloFlask\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelloFlask\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".env" />
+    <Content Include="HelloFlask\templates\index.html" />
     <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HelloFlask\" />
+    <Folder Include="HelloFlask\templates\" />
+    <Folder Include="milvus\" />
+    <Folder Include="milvus\fields\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv</Id>
+      <Version>0.0</Version>
+      <Description>venv (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
