@@ -13,3 +13,19 @@ class CollectionSchemaOwner(Enum):
     Qna = (2,)
     Faq = (3,)
     Simlarity = 4
+
+    @classmethod
+    def is_search(cls, owner: str):
+        return owner.lower() == cls.Search.name.lower()
+
+    @classmethod
+    def is_qna(cls, owner: str):
+        return owner.lower() == cls.Qna.name.lower()
+
+    @classmethod
+    def is_faq(cls, owner: str):
+        return owner.lower() == cls.Faq.name.lower()
+
+    @classmethod
+    def is_simlarity(cls, owner: str):
+        return owner.lower() == cls.Simlarity.name.lower()

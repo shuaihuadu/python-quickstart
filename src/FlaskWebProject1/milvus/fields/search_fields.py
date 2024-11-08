@@ -1,5 +1,10 @@
 from pymilvus import DataType, FieldSchema
-from milvus.constants import ID_FIELD, EMBEDDING_FIELD, VARCHAR_MAX_LENGTH
+from milvus.constants import (
+    ID_FIELD,
+    EMBEDDING_FIELD,
+    DYNAMIC_FIELD,
+    VARCHAR_MAX_LENGTH,
+)
 
 COLLECTION_ID_FIELD = "collection_id"
 PAGE_NUMBER_FIELD = "page_number"
@@ -20,6 +25,19 @@ CHUNK_CONTENT_FIELD = "chunk_content"
 PAGE_COUNT_FIELD = "page_count"
 WORD_COUNT_FIELD = "word_count"
 TIMESTAMP_FIELD = "timestamp"
+
+OUTPUT_FIELDS_WITH_EMBEDDING = [
+    ID_FIELD,
+    EMBEDDING_FIELD,
+    CHUNK_CONTENT_FIELD,
+    DYNAMIC_FIELD,
+]
+
+OUTPUT_FIELDS_WITH_OUT_EMBEDDING = [
+    ID_FIELD,
+    CHUNK_CONTENT_FIELD,
+    DYNAMIC_FIELD,
+]
 
 
 def create_field_schemas(dimensions: int) -> list[FieldSchema]:

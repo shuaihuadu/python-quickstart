@@ -1,5 +1,10 @@
 from pymilvus import DataType, FieldSchema
-from milvus.constants import ID_FIELD,EMBEDDING_FIELD,VARCHAR_MAX_LENGTH
+from milvus.constants import (
+    ID_FIELD,
+    EMBEDDING_FIELD,
+    DYNAMIC_FIELD,
+    VARCHAR_MAX_LENGTH,
+)
 
 COLLECTION_ID_FIELD = "collection_id"
 PAGE_NUMBER_FIELD = "page_number"
@@ -23,6 +28,20 @@ CHUNK_ATOM_TYPE_FIELD = "chunk_atom_type"
 LEVEL_FIELD = "level"
 TOKEN_COUNT_FIELD = "token_count"
 TIMESTAMP_FIELD = "timestamp"
+
+OUTPUT_FIELDS_WITH_EMBEDDING = [
+    ID_FIELD,
+    EMBEDDING_FIELD,
+    CHUNK_CONTENT_FIELD,
+    DYNAMIC_FIELD,
+]
+
+OUTPUT_FIELDS_WITH_OUT_EMBEDDING = [
+    ID_FIELD,
+    CHUNK_CONTENT_FIELD,
+    DYNAMIC_FIELD,
+]
+
 
 def create_field_schemas(dimensions: int) -> list[FieldSchema]:
     """创建QnA的Milvus Collection使用的字段的Schema"""
