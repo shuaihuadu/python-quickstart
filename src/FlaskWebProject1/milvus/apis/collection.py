@@ -9,7 +9,6 @@ milvus_service = MilvusService()
 
 ns = Namespace("collection", description="Milvus Collection的操作")
 
-# 定义模型
 create_model = ns.model(
     "CollectionCreateRequest",
     {

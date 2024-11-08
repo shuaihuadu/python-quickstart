@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask_restx import Api, fields
 from .collection import ns as collection_namespace
+from .entity import ns as entity_namespace
 from .api_constants import API_PREFIX
 
 milvus_api = Api(
@@ -12,3 +13,4 @@ milvus_api = Api(
 )
 
 milvus_api.add_namespace(collection_namespace)
+milvus_api.add_namespace(entity_namespace)

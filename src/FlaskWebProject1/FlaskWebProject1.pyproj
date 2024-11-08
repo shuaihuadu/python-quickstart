@@ -31,6 +31,9 @@
     <Compile Include="milvus\apis\api_constants.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="milvus\apis\entity.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="milvus\apis\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -52,7 +55,19 @@
     <Compile Include="milvus\milvus_service.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="milvus\models\memory_record.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\models\qna_memory_record.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="milvus\models\response.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\models\search_memory_record.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\utilities\MemoryRecordHelper.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="milvus\__init__.py">
@@ -78,6 +93,7 @@
     <Folder Include="milvus\fields\" />
     <Folder Include="milvus\apis\" />
     <Folder Include="milvus\models\" />
+    <Folder Include="milvus\utilities\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.12" />
