@@ -35,8 +35,6 @@ class MilvusService:
             "default", user=user, password=password, host=host, port=port
         )
 
-        self.collections: dict[str, Collection] = {}
-
     def create_collection(
         self,
         owner: CollectionSchemaOwner,
@@ -74,10 +72,46 @@ class MilvusService:
         if utility.has_collection(collection_name=collection_name) and overwrite:
             utility.drop_collection(collection_name=collection_name)
 
-        self.collections[collection_name] = Collection(
+        collection = Collection(
             name=collection_name, schema=schema, consistency_level=consistency
         )
 
-        self.collections[collection_name].create_index(
-            EMBEDDING_FIELD, index_params=index_param
-        )
+        collection.create_index(EMBEDDING_FIELD, index_params=index_param)
+
+    def get_collections(self) -> list[str]:
+        """获取当前的所有的Milvus Collection
+
+        Returs:
+            List[str]: Milvus Collection名称集合
+        """
+        return utility.list_collections()
+
+    def delete_collection(
+        self, collection_name: str | None = None, all: bool = False
+    ) -> None:
+        """删除指定的Milvus Collection
+
+        如果all=True，所有的Collection都会被删除
+
+        Args:
+            collection_name (str): 需要删除的Collection的名称
+            all (bool, optional): 是否删除所有Collection，默认是 False.
+        """
+        if collection_name and utility.has_collection(collection_name=collection_name):
+            utility.drop_collection(collection_name=collection_name)
+            return
+        if all:
+            for collection in utility.list_collections():
+                utility.drop_collection(collection_name=collection)
+            self.collections = []
+
+    def check_collection_exist(self, collection_name: str) -> bool:
+        """检查指定的Collection是否存在
+
+        Args:
+            collection_name (str): 需要检查的Collection的名称
+
+        Returns:
+            bool: 如果存在返回True，否则返回False
+        """
+        return utility.has_collection(collection_name=collection_name)

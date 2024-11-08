@@ -1,10 +1,5 @@
 from flask import Flask
-from flask_restful import Api
-from milvus.milvus_apis import initialize_api
+from milvus.apis import milvus_api
 
-
-def create_app():
-    app = Flask(__name__)
-    api = Api(app)
-    initialize_api(api)
-    return app
+app = Flask(__name__)
+milvus_api.init_app(app=app)

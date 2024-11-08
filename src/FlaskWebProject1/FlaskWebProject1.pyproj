@@ -28,6 +28,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="milvus\apis\api_constants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\apis\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="milvus\constants.py">
       <SubType>Code</SubType>
     </Compile>
@@ -40,13 +46,13 @@
     <Compile Include="milvus\fields\search_fields.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="milvus\milvus_apis.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="milvus\milvus_resources.py">
+    <Compile Include="milvus\apis\collection.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="milvus\milvus_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="milvus\models\response.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="milvus\__init__.py">
@@ -70,6 +76,8 @@
     <Folder Include="HelloFlask\templates\" />
     <Folder Include="milvus\" />
     <Folder Include="milvus\fields\" />
+    <Folder Include="milvus\apis\" />
+    <Folder Include="milvus\models\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.12" />
