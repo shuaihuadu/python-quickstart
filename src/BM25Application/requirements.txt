@@ -1,0 +1,4 @@
+pymilvus>=2.4.9
+milvus-model>=0.2.8
+# nltk>=3.9.1
+# pymilvus[model]
