@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "book_id": "101",
+        "book_name": "Example Book 1",
+        "chunk_content": "This is a chunk of the first book.",
+        "bm25_data": [
+            0.5,
+            0.8,
+            0.3
+        ]
+    },
+    {
+        "id": "2",
+        "book_id": "102",
+        "book_name": "Example Book 2",
+        "chunk_content": "This is a chunk of the second book.",
+        "bm25_data": [
+            0.6,
+            0.7,
+            0.4
+        ]
+    }
+]

@@ -26,6 +26,9 @@
     <Compile Include="bm25_helper.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="book_chunk.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
