@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8e25175d-a751-47c5-bea2-d9ef382586e1</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>BM25Application</Name>
+    <Name>bm25-processer</Name>
     <RootNamespace>BM25Application</RootNamespace>
     <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
@@ -43,6 +44,9 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="MSBuild|venv|D:\Github\python-quickstart\src\BM25Application\bm25-processer.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
