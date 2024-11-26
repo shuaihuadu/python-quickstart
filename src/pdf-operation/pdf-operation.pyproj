@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe08d3d6-28e0-4461-a4b5-3c1d888c248a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pdf_operation.py</StartupFile>
+    <StartupFile>services\split_service.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
