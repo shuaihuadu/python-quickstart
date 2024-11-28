@@ -1,52 +1,56 @@
-import uuid  
-from dataclasses import dataclass, field  
-from numpy import ndarray  
-from datetime import datetime  
-  
-@dataclass  
-class SearchMemoryRecord:  
-    book_id: str  
-    version_id: str  
-    version_tag: str  
-    chunk_content: str  
-    chunk_type: str  
-    page_number: int  
-    chunk_index: int  
-    embedding: ndarray  
-    bm25_embedding: ndarray  
-    collection_id: str = ""  
-    searchable: bool = False  
-    book_ancestors: str = ""  
-    book_name: str = ""  
-    version_status: str = ""  
-    material_id: str = ""  
-    category: str = ""  
-    source_type: str = ""  
-    source_id: str = ""  
-    source_url: str = ""  
-    page_count: int = 0  
-    word_count: int = 0  
-    timestamp: str = field(default_factory=lambda: datetime.now().isoformat())  
-    id: str = field(default_factory=lambda: str(uuid.uuid4()))  
-  
-# Ê¾Àı¶ÔÏó  
-record = SearchMemoryRecord(  
-    book_id="123",  
-    version_id="v1",  
-    version_tag="tag1",  
-    chunk_content="content",  
-    chunk_type="type",  
-    page_number=1,  
-    chunk_index=0,  
-    embedding=ndarray([]),  # ÕâÀïĞèÒªÌá¹©Êµ¼ÊµÄ ndarray  
-    bm25_embedding=ndarray([])  # ÕâÀïĞèÒªÌá¹©Êµ¼ÊµÄ ndarray  
-)  
-  
-print(record)  
 
-# Ê¹ÓÃ asdict ½« dataclass ¶ÔÏó×ª»»Îª×Öµä  
-from dataclasses import asdict  
-record_dict = asdict(record)  
-  
-# ´òÓ¡½á¹û  
-print(record_dict)  
+import uuid
+from dataclasses import dataclass, field
+from numpy import ndarray
+from datetime import datetime
+
+
+@dataclass
+class SearchMemoryRecord:
+    book_id: str
+    version_id: str
+    version_tag: str
+    chunk_content: str
+    chunk_type: str
+    page_number: int
+    chunk_index: int
+    embedding: ndarray
+    bm25_embedding: ndarray
+    collection_id: str = ""
+    searchable: bool = False
+    book_ancestors: str = ""
+    book_name: str = ""
+    version_status: str = ""
+    material_id: str = ""
+    category: str = ""
+    source_type: str = ""
+    source_id: str = ""
+    source_url: str = ""
+    page_count: int = 0
+    word_count: int = 0
+    timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
+    id: str = field(default_factory=lambda: str(uuid.uuid4()))
+
+
+# ç¤ºä¾‹å¯¹è±¡
+record = SearchMemoryRecord(
+    book_id="123",
+    version_id="v1",
+    version_tag="tag1",
+    chunk_content="content",
+    chunk_type="type",
+    page_number=1,
+    chunk_index=0,
+    embedding=ndarray([]),  # è¿™é‡Œéœ€è¦æä¾›å®é™…çš„ ndarray
+    bm25_embedding=ndarray([]),  # è¿™é‡Œéœ€è¦æä¾›å®é™…çš„ ndarray
+)
+
+print(record)
+
+# ä½¿ç”¨ asdict å°† dataclass å¯¹è±¡è½¬æ¢ä¸ºå­—å…¸
+from dataclasses import asdict
+
+record_dict = asdict(record)
+
+# æ‰“å°ç»“æœ
+print(record_dict)

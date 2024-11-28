@@ -1,17 +1,17 @@
 from datetime import datetime, timezone, timedelta
 import pytz
 
-# »ñÈ¡µ±Ç°Ê±¼ä
+# è·å–å½“å‰æ—¶é—´
 current_time = datetime.now()
 
-# ÉèÖÃÊ±Çø£¨ÀıÈç£¬Ê¹ÓÃ UTC Ê±Çø£©
-timezone = pytz.timezone('UTC')
+# è®¾ç½®æ—¶åŒºï¼ˆä¾‹å¦‚ï¼Œä½¿ç”¨ UTC æ—¶åŒºï¼‰
+timezone = pytz.timezone("UTC")
 
-# ½«µ±Ç°Ê±¼ä×ª»»Îª´øÊ±ÇøµÄÊ±¼ä
+# å°†å½“å‰æ—¶é—´è½¬æ¢ä¸ºå¸¦æ—¶åŒºçš„æ—¶é—´
 current_time_with_timezone = current_time.astimezone(timezone)
 
-# ¸ñÊ½»¯Ê±¼ä´Á
-formatted_timestamp = current_time_with_timezone.strftime('%Y-%m-%d %H:%M:%S')
+# æ ¼å¼åŒ–æ—¶é—´æˆ³
+formatted_timestamp = current_time_with_timezone.strftime("%Y-%m-%d %H:%M:%S")
 
 print(formatted_timestamp)
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test6.py</StartupFile>
+    <StartupFile>test_nltk.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,48 @@
     <Compile Include="test4.py" />
     <Compile Include="test5.py" />
     <Compile Include="test6.py" />
+    <Compile Include="test_nltk.py" />
+    <Compile Include="test7.py" />
+    <Compile Include="test_milvus_sparse_vector2.py" />
+    <Compile Include="test_milvus_sparse_vector.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nltk_data\" />
+    <Folder Include="nltk_data\corpora\" />
+    <Folder Include="nltk_data\corpora\stopwords\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nltk_data\corpora\stopwords.zip" />
+    <Content Include="nltk_data\corpora\stopwords\arabic" />
+    <Content Include="nltk_data\corpora\stopwords\azerbaijani" />
+    <Content Include="nltk_data\corpora\stopwords\basque" />
+    <Content Include="nltk_data\corpora\stopwords\bengali" />
+    <Content Include="nltk_data\corpora\stopwords\catalan" />
+    <Content Include="nltk_data\corpora\stopwords\chinese" />
+    <Content Include="nltk_data\corpora\stopwords\danish" />
+    <Content Include="nltk_data\corpora\stopwords\dutch" />
+    <Content Include="nltk_data\corpora\stopwords\english" />
+    <Content Include="nltk_data\corpora\stopwords\finnish" />
+    <Content Include="nltk_data\corpora\stopwords\french" />
+    <Content Include="nltk_data\corpora\stopwords\german" />
+    <Content Include="nltk_data\corpora\stopwords\greek" />
+    <Content Include="nltk_data\corpora\stopwords\hebrew" />
+    <Content Include="nltk_data\corpora\stopwords\hinglish" />
+    <Content Include="nltk_data\corpora\stopwords\hungarian" />
+    <Content Include="nltk_data\corpora\stopwords\indonesian" />
+    <Content Include="nltk_data\corpora\stopwords\italian" />
+    <Content Include="nltk_data\corpora\stopwords\kazakh" />
+    <Content Include="nltk_data\corpora\stopwords\nepali" />
+    <Content Include="nltk_data\corpora\stopwords\norwegian" />
+    <Content Include="nltk_data\corpora\stopwords\portuguese" />
+    <Content Include="nltk_data\corpora\stopwords\README" />
+    <Content Include="nltk_data\corpora\stopwords\romanian" />
+    <Content Include="nltk_data\corpora\stopwords\russian" />
+    <Content Include="nltk_data\corpora\stopwords\slovene" />
+    <Content Include="nltk_data\corpora\stopwords\spanish" />
+    <Content Include="nltk_data\corpora\stopwords\swedish" />
+    <Content Include="nltk_data\corpora\stopwords\tajik" />
+    <Content Include="nltk_data\corpora\stopwords\turkish" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
