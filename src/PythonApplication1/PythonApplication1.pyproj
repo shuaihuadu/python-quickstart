@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_nltk.py</StartupFile>
+    <StartupFile>test_format.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   <ItemGroup>
     <Compile Include="example001.py" />
     <Compile Include="example002.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_format.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test2.py" />
