@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_format.py</StartupFile>
+    <StartupFile>test_error_handler.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,21 +25,18 @@
     <Compile Include="example002.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_error_handler.py" />
+    <Compile Include="test_exists_ok.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_format.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test2.py" />
-    <Compile Include="test1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test3.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test4.py" />
-    <Compile Include="test5.py" />
-    <Compile Include="test6.py" />
+    <Compile Include="test_to_dict.py" />
+    <Compile Include="test_generate_test_data.py" />
+    <Compile Include="test_datetime.py" />
+    <Compile Include="test_calc_page_size.py" />
     <Compile Include="test_nltk.py" />
-    <Compile Include="test7.py" />
     <Compile Include="test_milvus_sparse_vector2.py" />
     <Compile Include="test_milvus_sparse_vector.py" />
   </ItemGroup>
