@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_error_handler.py</StartupFile>
+    <StartupFile>test_jieba.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonApplication1</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
+    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_format.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_jieba.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_to_dict.py" />
@@ -77,6 +81,18 @@
     <Content Include="nltk_data\corpora\stopwords\swedish" />
     <Content Include="nltk_data\corpora\stopwords\tajik" />
     <Content Include="nltk_data\corpora\stopwords\turkish" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv</Id>
+      <Version>0.0</Version>
+      <Description>venv (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
