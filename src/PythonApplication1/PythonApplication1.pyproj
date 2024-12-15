@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_jieba.py</StartupFile>
+    <StartupFile>test_milvus_hybrid_search.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -36,6 +36,8 @@
     <Compile Include="test_jieba.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_milvus_hybrid_search.py" />
+    <Compile Include="test_re.py" />
     <Compile Include="test_to_dict.py" />
     <Compile Include="test_generate_test_data.py" />
     <Compile Include="test_datetime.py" />
