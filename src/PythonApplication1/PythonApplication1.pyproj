@@ -36,6 +36,12 @@
     <Compile Include="test_jieba.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_json.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_logging.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_milvus_hybrid_search.py" />
     <Compile Include="test_re.py" />
     <Compile Include="test_to_dict.py" />
@@ -52,6 +58,7 @@
     <Folder Include="nltk_data\corpora\stopwords\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="meta.json" />
     <Content Include="nltk_data\corpora\stopwords.zip" />
     <Content Include="nltk_data\corpora\stopwords\arabic" />
     <Content Include="nltk_data\corpora\stopwords\azerbaijani" />
