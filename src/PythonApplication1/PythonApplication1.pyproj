@@ -26,6 +26,9 @@
     <Compile Include="example002.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_drop_duplicate.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_error_handler.py" />
     <Compile Include="test_exists_ok.py">
       <SubType>Code</SubType>
@@ -33,6 +36,7 @@
     <Compile Include="test_format.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_pymilvus.py" />
     <Compile Include="test_jieba.py">
       <SubType>Code</SubType>
     </Compile>
