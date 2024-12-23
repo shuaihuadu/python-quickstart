@@ -47,7 +47,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_milvus_hybrid_search.py" />
-    <Compile Include="test_re.py" />
+    <Compile Include="test_re4.py" />
+    <Compile Include="test_re3.py" />
+    <Compile Include="test_re2.py" />
+    <Compile Include="test_re1.py" />
     <Compile Include="test_to_dict.py" />
     <Compile Include="test_generate_test_data.py" />
     <Compile Include="test_datetime.py" />
