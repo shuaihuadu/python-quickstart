@@ -51,6 +51,7 @@
     <Compile Include="test_re3.py" />
     <Compile Include="test_re2.py" />
     <Compile Include="test_re1.py" />
+    <Compile Include="test_re5.py" />
     <Compile Include="test_to_dict.py" />
     <Compile Include="test_generate_test_data.py" />
     <Compile Include="test_datetime.py" />
