@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da0e0815-2921-4a10-844b-9a03d3dbcaf2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_milvus_hybrid_search.py</StartupFile>
+    <StartupFile>test_math.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -47,6 +47,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_milvus_hybrid_search.py" />
+    <Compile Include="test_math.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_re4.py" />
     <Compile Include="test_re3.py" />
     <Compile Include="test_re2.py" />

@@ -3,3 +3,4 @@ jieba
 pymilvus
 milvus-model
 nltk
+PyMuPDF

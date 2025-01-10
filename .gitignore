@@ -497,3 +497,4 @@ quickstart/langchain/MarkdownHeaderTextSplitter/output/book_183.txt
 quickstart/langchain/MarkdownHeaderTextSplitter/test.md
 quickstart/langchain/MarkdownHeaderTextSplitter/result.json
 /src/BM25Application/data
+/src/PythonApplication1/extracted_images
