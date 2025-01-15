@@ -8,7 +8,7 @@ def activate_function(distance):
 def calculate_score(weight, distance):
 
     # 计算激活函数值
-    activated_value = activate_function(distance)
+    activated_value = 0.5 + math.atan(distance) / math.pi
 
     # 计算最终得分
     score = weight * activated_value

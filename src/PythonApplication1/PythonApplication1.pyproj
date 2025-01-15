@@ -36,6 +36,7 @@
     <Compile Include="test_format.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_pdfplumer.py" />
     <Compile Include="test_pymilvus.py" />
     <Compile Include="test_jieba.py">
       <SubType>Code</SubType>
