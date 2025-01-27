@@ -4,3 +4,4 @@ pymilvus
 milvus-model
 nltk
 PyMuPDF
+azure-monitor-opentelemetry

@@ -26,6 +26,9 @@
     <Compile Include="example002.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_azure_monitor.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_drop_duplicate.py">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_format.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_merge_json.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_pdfplumer.py" />
@@ -55,6 +61,7 @@
     <Compile Include="test_re3.py" />
     <Compile Include="test_re2.py" />
     <Compile Include="test_re1.py" />
+    <Compile Include="test_re6.py" />
     <Compile Include="test_re5.py" />
     <Compile Include="test_to_dict.py" />
     <Compile Include="test_generate_test_data.py" />
@@ -70,6 +77,7 @@
     <Folder Include="nltk_data\corpora\stopwords\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".env" />
     <Content Include="meta.json" />
     <Content Include="nltk_data\corpora\stopwords.zip" />
     <Content Include="nltk_data\corpora\stopwords\arabic" />
