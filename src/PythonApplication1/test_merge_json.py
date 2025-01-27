@@ -26,6 +26,6 @@ def merge_json_files(directory, output_file):
 
 
 # 使用该函数
-directory_path = r"D:\McDonalds\HU2\compose\python-src\local_test_data\Book-4515\search_bm25_embeddings_new\en"  # 替换为你的目录路径
-output_file_path = r"D:\McDonalds\HU2\compose\python-src\local_test_data\Book-4515\merged_output_en2.json"  # 替换为你想要的输出文件名
+directory_path = r"\search_bm25_embeddings_new\en"  # 替换为你的目录路径
+output_file_path = r"\merged_output_en2.json"  # 替换为你想要的输出文件名
 merge_json_files(directory_path, output_file_path)
