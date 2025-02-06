@@ -5,3 +5,4 @@ milvus-model
 nltk
 PyMuPDF
 azure-monitor-opentelemetry
+langchain>=0.3.8

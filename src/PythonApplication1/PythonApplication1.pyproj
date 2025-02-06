@@ -39,6 +39,9 @@
     <Compile Include="test_format.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_langchain_splitter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_merge_json.py">
       <SubType>Code</SubType>
     </Compile>
