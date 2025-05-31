@@ -498,3 +498,10 @@ quickstart/langchain/MarkdownHeaderTextSplitter/test.md
 quickstart/langchain/MarkdownHeaderTextSplitter/result.json
 /src/BM25Application/data
 /src/PythonApplication1/extracted_images
+/src/bm25-test/files/corpus_en_completed.json
+/src/bm25-test/files/corpus_zh_completed.json
+/src/bm25-test/files/model_data.json
+/src/bm25-test/files/stopwords_to_remove.txt
+/src/bm25-test/files/jieba/dict.txt
+/src/bm25-test/files/jieba/hu_dict.txt
+/src/bm25-test/files/jieba/stopwords.txt

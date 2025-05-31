@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{FDB48ED4-B
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pdf-operation", "src\pdf-operation\pdf-operation.pyproj", "{FE08D3D6-28E0-4461-A4B5-3C1D888C248A}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "bm25-test", "src\bm25-test\bm25-test.pyproj", "{CDA01686-1CD1-4AFB-8889-59C7C61DDCC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,8 @@ Global
 		{8E25175D-A751-47C5-BEA2-D9EF382586E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE08D3D6-28E0-4461-A4B5-3C1D888C248A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE08D3D6-28E0-4461-A4B5-3C1D888C248A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA01686-1CD1-4AFB-8889-59C7C61DDCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA01686-1CD1-4AFB-8889-59C7C61DDCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +54,7 @@ Global
 		{8E25175D-A751-47C5-BEA2-D9EF382586E1} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
 		{FDB48ED4-B290-46B2-A2C4-A7BE2755972A} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
 		{FE08D3D6-28E0-4461-A4B5-3C1D888C248A} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
+		{CDA01686-1CD1-4AFB-8889-59C7C61DDCC5} = {D66C8048-CF17-4DAE-B081-6F4D7B3AFF1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02B7A411-FB6E-4338-BB59-0CB33369DF16}
